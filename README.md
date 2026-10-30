@@ -2,6 +2,14 @@
 
 Programa de geometría de precisión para Windows 10/11 de 64 bits.
 
+Autor: **Fran David Caton Alania**.
+
+## Página oficial
+
+[GeoTrazo: descargas, manual, ejemplos editables y novedades](https://fran56caton.github.io/geotrazo-actualizaciones/).
+
+Desde el paquete 0.8.2, el módulo **Descriptiva** permite crear puntos, rectas y planos en 3D, obtener sus proyecciones y trazas, y abatir planos sobre PH. El modelo se guarda en el mismo trabajo y sus trazos se exportan con las herramientas habituales.
+
 ## Descargar
 
 Abre [la publicación más reciente](https://github.com/fran56caton/geotrazo-actualizaciones/releases/latest) y descarga **GeoTrazo-Instalar-…-Windows-x64.exe**. Incluye WebView2 para instalar sin conexión. La biblioteca de un usuario nuevo empieza vacía; puedes personalizar el nombre en el rotulado y los campos de la carátula.

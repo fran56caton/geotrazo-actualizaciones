@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Manual de GeoTrazo: instalación, instrumentos, sistema diédrico, trazas, abatimientos y exportación."
+    />
+    <meta name="theme-color" content="#176b5f" />
+    <title>Manual · GeoTrazo</title>
+    <link rel="icon" href="assets/marca.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Ir al contenido</a>
+    <header class="site-header">
+      <a class="brand" href="./"
+        ><img src="assets/marca.svg" alt="" width="32" height="32" /><span
+          >GeoTrazo<small>GEOMETRÍA DE PRECISIÓN</small></span
+        ></a
+      >
+      <nav aria-label="Principal">
+        <a href="manual.html" aria-current="page">Manual</a
+        ><a href="index.html#ejemplos">Ejemplos</a
+        ><a href="novedades.html">Novedades</a
+        ><a class="button primary" href="index.html#descargar">Descargar</a>
+      </nav>
+    </header>
+    <main class="document-layout wrap" id="contenido">
+      <nav class="document-nav" aria-label="Índice del manual">
+        <strong>En esta guía</strong
+        ><a href="#instalar">Instalar y actualizar</a
+        ><a href="#primeros-pasos">Primeros pasos</a
+        ><a href="#instrumentos">Instrumentos</a
+        ><a href="#descriptiva">Geometría descriptiva</a
+        ><a href="#trazas">Rectas y trazas</a
+        ><a href="#abatimiento">Planos y abatimientos</a
+        ><a href="#exportar">Exportar y rotular</a
+        ><a href="#tus-archivos">Tus archivos</a>
+      </nav>
+      <article class="document-content">
+        <h1>Tu mesa de dibujo,<br />paso a paso.</h1>
+        <p>
+          Guía de GeoTrazo 0.8, con las herramientas del paquete 0.8.2. Autor:
+          <strong>Fran David Caton Alania</strong>.
+        </p>
+        <p>
+          <a href="assets/GUIA.txt" download
+            >Guardar la guía en texto para consultarla sin conexión</a
+          >. También puedes imprimir esta página desde tu navegador.
+        </p>
+        <h2 id="instalar">Instalar y actualizar</h2>
+        <ol>
+          <li>
+            Descarga el archivo
+            <strong>GeoTrazo-Instalar-…-Windows-x64.exe</strong> de la página
+            oficial. Usa el instalador completo en equipos nuevos: incluye
+            WebView2.
+          </li>
+          <li>
+            Sigue el instalador y abre GeoTrazo desde el escritorio o el menú
+            Inicio. Compatible con Windows 10/11 de 64 bits.
+          </li>
+          <li>
+            Un usuario nuevo empieza con hoja y biblioteca vacías. Cada equipo
+            conserva sus propios archivos.
+          </li>
+        </ol>
+        <p>
+          El paquete reducido <strong>GeoTrazo-Actualizar-…</strong> lo utiliza
+          el actualizador en una instalación existente. El programa comprueba
+          las publicaciones cuando dispone de conexión y permite
+          <strong>Guardar y reiniciar</strong>. Si no puede guardar, mantiene la
+          ventana abierta.
+        </p>
+        <div class="document-note">
+          <p>
+            La firma que protege las actualizaciones comprueba la integridad del
+            paquete. La firma de editor de Windows está pendiente de un
+            certificado. No son la misma firma.
+          </p>
+        </div>
+        <h2 id="primeros-pasos">Primeros pasos</h2>
+        <ol>
+          <li>
+            Escribe un título para el trabajo y comienza a trazar. Los cambios
+            se guardan automáticamente en <strong>Mis trabajos</strong>.
+          </li>
+          <li>
+            Crea carpetas para organizar tus ejercicios. Puedes abrir,
+            renombrar, ordenar y eliminar trabajos desde la biblioteca.
+          </li>
+          <li>
+            Importa el PDF del profesor en <strong>PDF de referencia</strong>.
+            Alterna esa vista con <strong>Mi dibujo</strong>; el programa
+            recuerda la página consultada de cada PDF.
+          </li>
+          <li>
+            Usa <strong>Deshacer</strong> y <strong>Rehacer</strong> para
+            corregir trazos. Antes de borrar un trabajo importante, guarda una
+            copia de seguridad.
+          </li>
+        </ol>
+        <h2 id="instrumentos">Instrumentos y precisión</h2>
+        <p>
+          Regla, escuadras, transportador y compás acompañan las herramientas de
+          dibujo. Las referencias permiten encajar en puntos e intersecciones.
+          En selección puedes mover los elementos compatibles, modificar sus
+          propiedades y duplicar segmentos y textos.
+        </p>
+        <p>
+          El texto admite símbolos griegos y notación geométrica. Ángulos,
+          marcas de perpendicularidad y paralelismo se añaden con sus
+          herramientas; las propiedades permiten ajustar su presentación.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Atajo</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ctrl+O</td>
+              <td>Abrir un archivo .geotrazo</td>
+            </tr>
+            <tr>
+              <td>Ctrl+S</td>
+              <td>Guardar un archivo del trabajo</td>
+            </tr>
+            <tr>
+              <td>Ctrl+Z / Ctrl+Y</td>
+              <td>Deshacer / rehacer</td>
+            </tr>
+            <tr>
+              <td>Ctrl+C / Ctrl+V</td>
+              <td>Copiar / pegar segmentos y textos compatibles</td>
+            </tr>
+            <tr>
+              <td>Supr / Ctrl+X</td>
+              <td>Eliminar la selección editable y sus dependencias</td>
+            </tr>
+            <tr>
+              <td>F11</td>
+              <td>Pantalla completa</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="descriptiva">Crear en el espacio y representar en la lámina</h2>
+        <p>
+          Abre <strong>Descriptiva</strong>. El módulo es opcional: abrirlo no
+          añade ejemplos ni modifica tu dibujo. Al crear un punto, una recta o
+          un plano, sus proyecciones se incorporan al trabajo actual y se
+          guardan con él.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Coordenada</th>
+              <th>Significado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>X</td>
+              <td>Abscisa, medida en la dirección de la línea de tierra.</td>
+            </tr>
+            <tr>
+              <td>Y</td>
+              <td>Alejamiento. Positivo delante de PV.</td>
+            </tr>
+            <tr>
+              <td>Z</td>
+              <td>Cota. Positiva encima de PH.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Introduce las coordenadas en milímetros. En la representación
+          habitual, <strong>A₁</strong> es la proyección horizontal y
+          <strong>A₂</strong> la vertical. Para cota positiva, A₂ aparece encima
+          de LT; para alejamiento positivo, A₁ aparece debajo.
+        </p>
+        <p>
+          Con el origen de representación <code>(x₀, y₀)</code> y escala
+          <code>s</code>, la hoja usa coordenadas con Y hacia arriba:
+        </p>
+        <ul>
+          <li><code>A₁ = (x₀ + s·X, y₀ − s·Y)</code></li>
+          <li><code>A₂ = (x₀ + s·X, y₀ + s·Z)</code></li>
+        </ul>
+        <p>
+          Arrastra la vista 3D para girar. También admite las flechas del
+          teclado, Home para restablecer y los botones de zoom. En
+          <strong>Vista y posición en la lámina</strong> ajusta el origen, la
+          escala y las proyectantes.
+        </p>
+        <p>
+          Las coordenadas de los puntos proyectados se editan desde este módulo.
+          Al volver al dibujo puedes utilizarlos como referencias para nuevas
+          construcciones. Las proyecciones se crean bloqueadas para evitar
+          movimientos accidentales.
+        </p>
+        <h2 id="trazas">Rectas y sus trazas</h2>
+        <ol>
+          <li>Crea dos puntos espaciales distintos.</li>
+          <li>
+            En <strong>Rectas</strong>, elige ambos puntos y la representación:
+            recta prolongada o segmento.
+          </li>
+          <li>
+            Activa <strong>Mostrar trazas de rectas y planos</strong> para ver
+            las intersecciones de la recta soporte con PH y PV.
+          </li>
+        </ol>
+        <p>
+          La traza horizontal cumple <code>Z = 0</code> y la vertical
+          <code>Y = 0</code>. Una recta paralela a un plano principal no tiene
+          una traza finita con él; si está contenida, hay infinitos puntos
+          comunes. GeoTrazo lo explica en las observaciones en lugar de inventar
+          una intersección.
+        </p>
+        <p>
+          Una recta perpendicular al plano de proyección se representa como un
+          punto en esa vista. Las trazas corresponden a la recta completa aunque
+          hayas elegido mostrar únicamente el segmento entre sus puntos.
+        </p>
+        <h2 id="abatimiento">Planos y verdadera magnitud</h2>
+        <ol>
+          <li>Crea tres puntos distintos que no estén alineados.</li>
+          <li>
+            En <strong>Planos</strong>, selecciona esos puntos. El programa
+            representa el triángulo que los define y calcula las trazas del
+            plano ilimitado.
+          </li>
+          <li>
+            Elige <strong>Sobre PH · sentido 1</strong> o
+            <strong>sentido 2</strong> para abatirlo usando su traza horizontal
+            como charnela.
+          </li>
+        </ol>
+        <p>
+          Los puntos <strong>(A), (B), (C)</strong> pertenecen al plano abatido
+          y mantienen las distancias espaciales: el triángulo queda en verdadera
+          magnitud. En la vista 3D, el contorno ocre muestra la posición abatida
+          sobre PH.
+        </p>
+        <p>
+          Un plano paralelo a PH no tiene una traza horizontal que pueda usarse
+          como charnela. Este módulo lo indica y no realiza ese abatimiento. Los
+          puntos alineados tampoco determinan un plano único.
+        </p>
+        <p>
+          Si deseas borrar un punto 3D, el módulo explica que también se
+          eliminarán las rectas y planos que lo usan. Si otros trazos manuales
+          dependen de sus proyecciones, debes resolver primero esas referencias.
+        </p>
+        <h2 id="exportar">Exportar y preparar una entrega</h2>
+        <p>
+          Exporta el dibujo como PDF o SVG.
+          <strong>PDF con rotulado</strong> permite editar número de lámina,
+          título, alumno y ciclo. En una carpeta puedes exportar todos los
+          trabajos a un solo PDF, normal o rotulado, e incluir una carátula con
+          tus propios datos.
+        </p>
+        <p>
+          Las construcciones de Descriptiva se exportan como geometría vectorial
+          de la lámina; la vista 3D es una ayuda de consulta y no sustituye las
+          proyecciones del PDF. Para conservar el modelo editable, guarda
+          también el archivo <strong>.geotrazo</strong>.
+        </p>
+        <h2 id="tus-archivos">Tus archivos y el funcionamiento sin internet</h2>
+        <p>
+          Dibujar, guardar, abrir PDF ya importados y exportar funcionan sin
+          conexión. Cada usuario de Windows conserva su biblioteca local. Las
+          actualizaciones no sincronizan tus dibujos con otros equipos.
+        </p>
+        <p>
+          Haz copias desde <strong>Mis trabajos</strong> con las opciones de
+          copia de seguridad y exportación. Guárdalas en una ubicación distinta
+          del equipo cuando necesites protegerte ante una avería del disco. El
+          guardado automático no sustituye esa copia externa.
+        </p>
+        <p>
+          El programa consulta GitHub para comprobar y descargar
+          actualizaciones. El sitio oficial no incorpora formularios ni
+          analítica propia; sus páginas y descargas se alojan en GitHub. No se
+          suben tus dibujos ni tus PDF al publicar mejoras del programa.
+        </p>
+        <h3>Material de consulta</h3>
+        <p>
+          La convención diédrica se explica también en los materiales docentes
+          de
+          <a
+            href="https://campusvirtual.ull.es/ocw/pluginfile.php/16263/mod_resource/content/0/0-indice.pdf"
+            >Sistema diédrico de la Universidad de La Laguna</a
+          >. Los archivos de ejemplo de esta página se han creado con el motor
+          de GeoTrazo.
+        </p>
+      </article>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <strong>GeoTrazo</strong>
+        <p>Autor: Fran David Caton Alania</p>
+      </div>
+      <nav aria-label="Enlaces del pie">
+        <a href="./">Inicio</a
+        ><a href="index.html#ejemplos">Ejemplos editables</a
+        ><a href="novedades.html">Novedades</a>
+      </nav>
+      <small>© 2026 Fran David Caton Alania</small>
+    </footer>
+  </body>
+</html>

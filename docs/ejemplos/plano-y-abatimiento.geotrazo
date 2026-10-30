@@ -1,0 +1,692 @@
+{
+  "version": 1,
+  "title": "Plano y abatimiento sobre PH",
+  "sheet": {
+    "format": "A4",
+    "width": 297,
+    "height": 210,
+    "grid": false,
+    "spacing": 5,
+    "margin": 10
+  },
+  "objects": [
+    {
+      "id": "d:96286157-b1c7-44eb-b3b6-e363f677d082:LT:a",
+      "def": {
+        "type": "free",
+        "x": 10,
+        "y": 110
+      },
+      "name": "Apoyo LT",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:96286157-b1c7-44eb-b3b6-e363f677d082:LT:b",
+      "def": {
+        "type": "free",
+        "x": 287,
+        "y": 110
+      },
+      "name": "Apoyo LT",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:96286157-b1c7-44eb-b3b6-e363f677d082:LT",
+      "def": {
+        "type": "through",
+        "a": "d:96286157-b1c7-44eb-b3b6-e363f677d082:LT:a",
+        "b": "d:96286157-b1c7-44eb-b3b6-e363f677d082:LT:b",
+        "extent": "segment"
+      },
+      "name": "Línea de tierra",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:96286157-b1c7-44eb-b3b6-e363f677d082:LT:text",
+      "def": {
+        "type": "text",
+        "x": 279,
+        "y": 112,
+        "text": "LT",
+        "size": 3.5,
+        "angle": 0
+      },
+      "name": "LT",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -40,
+          "y": 20,
+          "z": 45
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "A₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -40,
+          "y": 20,
+          "z": 45
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "A₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:projector",
+      "def": {
+        "type": "through",
+        "a": "d:a:h",
+        "b": "d:a:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante A",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 35,
+          "y": 15,
+          "z": 25
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "B₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 35,
+          "y": 15,
+          "z": 25
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "B₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:projector",
+      "def": {
+        "type": "through",
+        "a": "d:b:h",
+        "b": "d:b:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante B",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:c:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 0,
+          "y": 55,
+          "z": 15
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "C₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:c:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 0,
+          "y": 55,
+          "z": 15
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "C₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:c:projector",
+      "def": {
+        "type": "through",
+        "a": "d:c:h",
+        "b": "d:c:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante C",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:horizontal:0",
+      "def": {
+        "type": "through",
+        "a": "d:a:h",
+        "b": "d:b:h",
+        "extent": "segment"
+      },
+      "name": "α · horizontal 1",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:horizontal:1",
+      "def": {
+        "type": "through",
+        "a": "d:b:h",
+        "b": "d:c:h",
+        "extent": "segment"
+      },
+      "name": "α · horizontal 2",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:horizontal:2",
+      "def": {
+        "type": "through",
+        "a": "d:c:h",
+        "b": "d:a:h",
+        "extent": "segment"
+      },
+      "name": "α · horizontal 3",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:trace:horizontal:a",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 36.745575221238944,
+          "y": 62.68362831858408,
+          "z": 0
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:trace:horizontal:b",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 79.88047372612183,
+          "y": 37.397653332963074,
+          "z": 0
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:trace:horizontal",
+      "def": {
+        "type": "through",
+        "a": "d:alpha:trace:horizontal:a",
+        "b": "d:alpha:trace:horizontal:b",
+        "extent": "line"
+      },
+      "name": "α₁ · traza",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:vertical:0",
+      "def": {
+        "type": "through",
+        "a": "d:a:v",
+        "b": "d:b:v",
+        "extent": "segment"
+      },
+      "name": "α · vertical 1",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:vertical:1",
+      "def": {
+        "type": "through",
+        "a": "d:b:v",
+        "b": "d:c:v",
+        "extent": "segment"
+      },
+      "name": "α · vertical 2",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:vertical:2",
+      "def": {
+        "type": "through",
+        "a": "d:c:v",
+        "b": "d:a:v",
+        "extent": "segment"
+      },
+      "name": "α · vertical 3",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:trace:vertical:a",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 11.927468581687615,
+          "y": 0,
+          "z": 39.64129263913824
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:trace:vertical:b",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 59.80710522428265,
+          "y": 0,
+          "z": 25.235030286499025
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:trace:vertical",
+      "def": {
+        "type": "through",
+        "a": "d:alpha:trace:vertical:a",
+        "b": "d:alpha:trace:vertical:b",
+        "extent": "line"
+      },
+      "name": "α₂ · traza",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:abated:a",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -46.25798501492171,
+          "y": 9.324613798074722,
+          "z": 0
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "(A)",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:abated:b",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 31.52334165837683,
+          "y": 9.069229887819297,
+          "z": 0
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "(B)",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:abated:c",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -2.0859950049739027,
+          "y": 51.44153793269158,
+          "z": 0
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 154.12899250746085,
+          "y": 110
+        },
+        "scale": 1
+      },
+      "name": "(C)",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:abated:edge:0",
+      "def": {
+        "type": "through",
+        "a": "d:alpha:abated:a",
+        "b": "d:alpha:abated:b",
+        "extent": "segment"
+      },
+      "name": "α abatido · 1",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:abated:edge:1",
+      "def": {
+        "type": "through",
+        "a": "d:alpha:abated:b",
+        "b": "d:alpha:abated:c",
+        "extent": "segment"
+      },
+      "name": "α abatido · 2",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:alpha:abated:edge:2",
+      "def": {
+        "type": "through",
+        "a": "d:alpha:abated:c",
+        "b": "d:alpha:abated:a",
+        "extent": "segment"
+      },
+      "name": "α abatido · 3",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    }
+  ],
+  "precision": 3,
+  "units": "mm",
+  "log": [],
+  "descriptive": {
+    "id": "96286157-b1c7-44eb-b3b6-e363f677d082",
+    "points": [
+      {
+        "x": -40,
+        "y": 20,
+        "z": 45,
+        "id": "a",
+        "name": "A"
+      },
+      {
+        "x": 35,
+        "y": 15,
+        "z": 25,
+        "id": "b",
+        "name": "B"
+      },
+      {
+        "x": 0,
+        "y": 55,
+        "z": 15,
+        "id": "c",
+        "name": "C"
+      }
+    ],
+    "lines": [],
+    "planes": [
+      {
+        "id": "alpha",
+        "name": "α",
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "abatement": 1
+      }
+    ],
+    "origin": {
+      "x": 154.12899250746085,
+      "y": 110
+    },
+    "scale": 1,
+    "projectors": true,
+    "traces": true
+  }
+}

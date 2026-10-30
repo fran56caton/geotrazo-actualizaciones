@@ -1,0 +1,85 @@
+GEOTRAZO 0.8 - GUIA PARA INSTALAR Y EMPEZAR
+
+1. INSTALACION
+Abre GeoTrazo-Instalar-0.8.2-Windows-x64.exe y sigue los pasos.
+El instalador incluye el componente Microsoft WebView2 para instalarlo
+si hace falta, sin descargarlo durante la instalacion.
+Compatible con Windows 10 y Windows 11 de 64 bits (x64).
+No necesitas Node.js, Python, Rust, una cuenta ni una clave de API.
+
+2. PRIMER INICIO
+Abre GeoTrazo desde el escritorio o el menu Inicio.
+La hoja y la biblioteca empiezan vacias en un usuario nuevo.
+No se incluyen trabajos, nombres ni PDF personales del autor.
+Los ejemplos del menu Ejercicio son opcionales.
+Un dibujo empieza a guardarse al escribir su titulo o hacer cambios.
+Mis trabajos permite crear carpetas, abrir, ordenar y eliminar dibujos.
+
+3. GUARDADO
+Cada usuario de Windows tiene su propia biblioteca en este equipo.
+No se sincroniza automaticamente entre equipos.
+Los dibujos se guardan automaticamente y al cerrar normalmente.
+Haz copias con Mis trabajos > Copia de seguridad o Exportar todos.
+Puedes recuperarlas con Importar copia en otro equipo.
+
+4. ROTULADO
+Exportar > PDF con rotulado permite introducir numero, titulo,
+nombre del alumno y ciclo antes de guardar el PDF.
+Estos campos son editables. Se recuerdan para tus siguientes exportaciones.
+El rotulado mantiene los marcos y las medidas de la plantilla original.
+
+5. CARATULA
+En Mis trabajos elige una carpeta y exportala como PDF normal o con rotulado.
+Puedes incluir o quitar la caratula y editar titulo, institucion,
+facultad, escuela, carrera, asignatura, estudiante, docentes,
+especialidad, lugar y ano antes de exportar.
+El escudo UNHEVAL de la plantilla original es opcional y empieza desactivado.
+
+6. FUNCIONAMIENTO SIN INTERNET
+Dibujar, guardar, consultar los PDF ya importados y exportar no requieren
+conexion. La escritura a mano que se convierte a texto usa el reconocimiento
+de escritura de Windows: si no esta instalado, agrega el componente de
+escritura de tu idioma en la configuracion de Windows. Es opcional;
+el texto con teclado y las herramientas de dibujo siguen disponibles.
+
+7. ACTUALIZAR O DESINSTALAR
+Esta copia comprueba las mejoras publicadas al abrir, al volver internet
+y cada cuatro horas mientras esta abierta. Puedes comprobarlas tambien
+con el boton Buscar actualizaciones de la barra superior.
+Las descarga en segundo plano y comprueba su firma antes de ofrecer instalarlas.
+Pulsa Guardar y reiniciar para actualizar cuando te convenga.
+Si no puede guardar, conserva la ventana abierta y no inicia la instalacion.
+Sin internet sigues trabajando normalmente. Cada equipo conserva sus datos.
+La primera vez debes instalar esta copia con actualizaciones habilitadas.
+Las copias antiguas necesitan esa instalacion inicial una sola vez.
+Para reinstalar manualmente, cierra GeoTrazo antes de abrir el instalador.
+Desinstala desde Configuracion > Aplicaciones de Windows.
+No selecciones borrar datos si quieres conservar tus trabajos.
+Una reinstalacion o actualizacion no vacia una biblioteca existente.
+Empieza de cero solo un perfil nuevo; nunca se borran dibujos para instalar.
+
+Este instalador no tiene firma digital comercial. Windows podria mostrar
+un aviso de editor desconocido. Comprueba que recibiste el archivo del autor
+y, si lo necesitas, contrasta el SHA-256 con SHA256SUMS.txt.
+
+8. GEOMETRIA DESCRIPTIVA
+Abre Descriptiva en la barra superior. Anade puntos por sus coordenadas
+X (abscisa), Y (alejamiento) y Z (cota), en milimetros. Y positivo queda
+delante de PV; Z positivo queda encima de PH. A1 es la proyeccion horizontal
+y A2 la vertical. El modelo se guarda automaticamente en el mismo trabajo.
+Anade una recta por dos puntos o un plano por tres puntos no alineados.
+Las trazas se calculan con los planos principales; los casos de paralelismo
+y coincidencia se explican en Observaciones geometricas.
+El abatimiento sobre PH usa la traza horizontal como charnela y mantiene
+las longitudes. Un plano paralelo a PH no tiene esa charnela.
+Arrastra la vista 3D para girar; admite flechas del teclado y botones de zoom.
+Vista y posicion en la lamina permite cambiar origen y escala o ajustar
+el modelo a la hoja. Los ejemplos son opcionales y editables.
+Volver al dibujo permite continuar los trazos normales sobre las proyecciones.
+Los puntos proyectados estan vinculados: cambia sus coordenadas desde
+Descriptiva. Exporta con PDF, SVG o rotulado igual que cualquier dibujo.
+
+9. PAGINA OFICIAL
+https://fran56caton.github.io/geotrazo-actualizaciones/
+Manual, ejemplos editables, novedades y descarga de la ultima publicacion.
+Autor: Fran David Caton Alania.

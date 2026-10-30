@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "title": "Un punto en cada diedro",
+  "sheet": {
+    "format": "A4",
+    "width": 297,
+    "height": 210,
+    "grid": false,
+    "spacing": 5,
+    "margin": 10
+  },
+  "objects": [
+    {
+      "id": "d:e0fc731b-73e6-45bd-bac9-f878c2eae42f:LT:a",
+      "def": {
+        "type": "free",
+        "x": 10,
+        "y": 102.5
+      },
+      "name": "Apoyo LT",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:e0fc731b-73e6-45bd-bac9-f878c2eae42f:LT:b",
+      "def": {
+        "type": "free",
+        "x": 287,
+        "y": 102.5
+      },
+      "name": "Apoyo LT",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:e0fc731b-73e6-45bd-bac9-f878c2eae42f:LT",
+      "def": {
+        "type": "through",
+        "a": "d:e0fc731b-73e6-45bd-bac9-f878c2eae42f:LT:a",
+        "b": "d:e0fc731b-73e6-45bd-bac9-f878c2eae42f:LT:b",
+        "extent": "segment"
+      },
+      "name": "Línea de tierra",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:e0fc731b-73e6-45bd-bac9-f878c2eae42f:LT:text",
+      "def": {
+        "type": "text",
+        "x": 279,
+        "y": 104.5,
+        "text": "LT",
+        "size": 3.5,
+        "angle": 0
+      },
+      "name": "LT",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -65,
+          "y": 30,
+          "z": 35
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "A₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -65,
+          "y": 30,
+          "z": 35
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "A₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:projector",
+      "def": {
+        "type": "through",
+        "a": "d:a:h",
+        "b": "d:a:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante A",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -20,
+          "y": -30,
+          "z": 40
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "B₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -20,
+          "y": -30,
+          "z": 40
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "B₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:projector",
+      "def": {
+        "type": "through",
+        "a": "d:b:h",
+        "b": "d:b:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante B",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:c:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 25,
+          "y": -35,
+          "z": -25
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "C₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:c:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 25,
+          "y": -35,
+          "z": -25
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "C₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:c:projector",
+      "def": {
+        "type": "through",
+        "a": "d:c:h",
+        "b": "d:c:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante C",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:d:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 65,
+          "y": 35,
+          "z": -30
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "D₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:d:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 65,
+          "y": 35,
+          "z": -30
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 148.5,
+          "y": 102.5
+        },
+        "scale": 1
+      },
+      "name": "D₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:d:projector",
+      "def": {
+        "type": "through",
+        "a": "d:d:h",
+        "b": "d:d:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante D",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    }
+  ],
+  "precision": 3,
+  "units": "mm",
+  "log": [],
+  "descriptive": {
+    "id": "e0fc731b-73e6-45bd-bac9-f878c2eae42f",
+    "points": [
+      {
+        "x": -65,
+        "y": 30,
+        "z": 35,
+        "id": "a",
+        "name": "A"
+      },
+      {
+        "x": -20,
+        "y": -30,
+        "z": 40,
+        "id": "b",
+        "name": "B"
+      },
+      {
+        "x": 25,
+        "y": -35,
+        "z": -25,
+        "id": "c",
+        "name": "C"
+      },
+      {
+        "x": 65,
+        "y": 35,
+        "z": -30,
+        "id": "d",
+        "name": "D"
+      }
+    ],
+    "lines": [],
+    "planes": [],
+    "origin": {
+      "x": 148.5,
+      "y": 102.5
+    },
+    "scale": 1,
+    "projectors": true,
+    "traces": true
+  }
+}

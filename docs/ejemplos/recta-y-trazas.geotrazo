@@ -1,0 +1,489 @@
+{
+  "version": 1,
+  "title": "Una recta y sus trazas",
+  "sheet": {
+    "format": "A4",
+    "width": 297,
+    "height": 210,
+    "grid": false,
+    "spacing": 5,
+    "margin": 10
+  },
+  "objects": [
+    {
+      "id": "d:69da1fa7-d128-4ad2-b6a8-7b1229551bdf:LT:a",
+      "def": {
+        "type": "free",
+        "x": 10,
+        "y": 98.25
+      },
+      "name": "Apoyo LT",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:69da1fa7-d128-4ad2-b6a8-7b1229551bdf:LT:b",
+      "def": {
+        "type": "free",
+        "x": 287,
+        "y": 98.25
+      },
+      "name": "Apoyo LT",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:69da1fa7-d128-4ad2-b6a8-7b1229551bdf:LT",
+      "def": {
+        "type": "through",
+        "a": "d:69da1fa7-d128-4ad2-b6a8-7b1229551bdf:LT:a",
+        "b": "d:69da1fa7-d128-4ad2-b6a8-7b1229551bdf:LT:b",
+        "extent": "segment"
+      },
+      "name": "Línea de tierra",
+      "role": "axis",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:69da1fa7-d128-4ad2-b6a8-7b1229551bdf:LT:text",
+      "def": {
+        "type": "text",
+        "x": 279,
+        "y": 100.25,
+        "text": "LT",
+        "size": 3.5,
+        "angle": 0
+      },
+      "name": "LT",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -45,
+          "y": 30,
+          "z": 45
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "A₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -45,
+          "y": 30,
+          "z": 45
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "A₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:a:projector",
+      "def": {
+        "type": "through",
+        "a": "d:a:h",
+        "b": "d:a:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante A",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:h",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 35,
+          "y": 55,
+          "z": 15
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "B₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:v",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 35,
+          "y": 55,
+          "z": 15
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "B₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:b:projector",
+      "def": {
+        "type": "through",
+        "a": "d:b:h",
+        "b": "d:b:v",
+        "extent": "segment"
+      },
+      "name": "Proyectante B",
+      "role": "auxiliary",
+      "color": "#000000",
+      "width": 0.2,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:horizontal:a",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -45,
+          "y": 30,
+          "z": 45
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:horizontal:b",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 35,
+          "y": 55,
+          "z": 15
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:horizontal",
+      "def": {
+        "type": "through",
+        "a": "d:r:horizontal:a",
+        "b": "d:r:horizontal:b",
+        "extent": "line"
+      },
+      "name": "r₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:vertical:a",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -45,
+          "y": 30,
+          "z": 45
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:vertical:b",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 35,
+          "y": 55,
+          "z": 15
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Apoyo de proyección",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": true,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:vertical",
+      "def": {
+        "type": "through",
+        "a": "d:r:vertical:a",
+        "b": "d:r:vertical:b",
+        "extent": "line"
+      },
+      "name": "r₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": false,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:trace:horizontal:horizontal",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 75,
+          "y": 67.5,
+          "z": 0
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Hr₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:trace:horizontal:vertical",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": 75,
+          "y": 67.5,
+          "z": 0
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Hr₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:trace:vertical:horizontal",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -141,
+          "y": 0,
+          "z": 81
+        },
+        "view": "horizontal",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Vr₁",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    },
+    {
+      "id": "d:r:trace:vertical:vertical",
+      "def": {
+        "type": "projection3D",
+        "world": {
+          "x": -141,
+          "y": 0,
+          "z": 81
+        },
+        "view": "vertical",
+        "origin": {
+          "x": 181.5,
+          "y": 98.25
+        },
+        "scale": 1
+      },
+      "name": "Vr₂",
+      "role": "final",
+      "color": "#000000",
+      "width": 0.35,
+      "hidden": false,
+      "locked": true,
+      "label": true,
+      "source": "descriptive"
+    }
+  ],
+  "precision": 3,
+  "units": "mm",
+  "log": [],
+  "descriptive": {
+    "id": "69da1fa7-d128-4ad2-b6a8-7b1229551bdf",
+    "points": [
+      {
+        "x": -45,
+        "y": 30,
+        "z": 45,
+        "id": "a",
+        "name": "A"
+      },
+      {
+        "x": 35,
+        "y": 55,
+        "z": 15,
+        "id": "b",
+        "name": "B"
+      }
+    ],
+    "lines": [
+      {
+        "id": "r",
+        "name": "r",
+        "a": "a",
+        "b": "b",
+        "extent": "line"
+      }
+    ],
+    "planes": [],
+    "origin": {
+      "x": 181.5,
+      "y": 98.25
+    },
+    "scale": 1,
+    "projectors": true,
+    "traces": true
+  }
+}
