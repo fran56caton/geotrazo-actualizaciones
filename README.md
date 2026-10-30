@@ -10,9 +10,11 @@ Autor: **Fran David Caton Alania**.
 
 Desde el paquete 0.8.2, el módulo **Descriptiva** permite crear puntos, rectas y planos en 3D, obtener sus proyecciones y trazas, y abatir planos sobre PH. El modelo se guarda en el mismo trabajo y sus trazos se exportan con las herramientas habituales.
 
+Desde el paquete 0.8.3, **Polígono** permite dibujar por vértices o construir polígonos regulares con radio fijo opcional. El rotulado toma automáticamente el número y el título del trabajo. Los apoyos nuevos de regla y escuadras quedan ocultos y sin etiquetas.
+
 ## Descargar
 
-Abre [la publicación más reciente](https://github.com/fran56caton/geotrazo-actualizaciones/releases/latest) y descarga **GeoTrazo-Instalar-…-Windows-x64.exe**. Incluye WebView2 para instalar sin conexión. La biblioteca de un usuario nuevo empieza vacía; puedes personalizar el nombre en el rotulado y los campos de la carátula.
+Abre [la publicación más reciente](https://github.com/fran56caton/geotrazo-actualizaciones/releases/latest) y descarga **GeoTrazo-Instalar-…-Windows-x64.exe**. Incluye WebView2 para instalar sin conexión. La biblioteca de un usuario nuevo empieza vacía; puedes personalizar el alumno en el rotulado y el estudiante y título de la carátula. Se mantiene la plantilla original de UNHEVAL con su escudo.
 
 ## Actualizaciones
 

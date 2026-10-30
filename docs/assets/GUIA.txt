@@ -1,7 +1,7 @@
 GEOTRAZO 0.8 - GUIA PARA INSTALAR Y EMPEZAR
 
 1. INSTALACION
-Abre GeoTrazo-Instalar-0.8.2-Windows-x64.exe y sigue los pasos.
+Abre GeoTrazo-Instalar-0.8.3-Windows-x64.exe y sigue los pasos.
 El instalador incluye el componente Microsoft WebView2 para instalarlo
 si hace falta, sin descargarlo durante la instalacion.
 Compatible con Windows 10 y Windows 11 de 64 bits (x64).
@@ -23,17 +23,27 @@ Haz copias con Mis trabajos > Copia de seguridad o Exportar todos.
 Puedes recuperarlas con Importar copia en otro equipo.
 
 4. ROTULADO
-Exportar > PDF con rotulado permite introducir numero, titulo,
-nombre del alumno y ciclo antes de guardar el PDF.
-Estos campos son editables. Se recuerdan para tus siguientes exportaciones.
+Exportar > PDF con rotulado permite editar solo el nombre del alumno.
+El titulo se toma del dibujo y el numero de sus datos guardados o de su
+posicion en la carpeta. El ciclo se mantiene en VI. El nombre se recuerda.
 El rotulado mantiene los marcos y las medidas de la plantilla original.
 
 5. CARATULA
 En Mis trabajos elige una carpeta y exportala como PDF normal o con rotulado.
-Puedes incluir o quitar la caratula y editar titulo, institucion,
-facultad, escuela, carrera, asignatura, estudiante, docentes,
-especialidad, lugar y ano antes de exportar.
-El escudo UNHEVAL de la plantilla original es opcional y empieza desactivado.
+Puedes incluir o quitar la caratula y editar solo titulo y estudiante.
+Se conserva la plantilla original de UNHEVAL con su escudo, institucion,
+docentes, especialidad, lugar y ano. El estudiante se aplica tambien a
+todas las laminas del PDF. Una copia nueva empieza sin nombre de estudiante.
+
+POLIGONOS Y TRAZOS LIMPIOS
+En la barra de herramientas elige Poligono. Por vertices: haz clic en cada
+vertice y cierra con Enter, el boton Cerrar poligono o clic en el inicio.
+Ctrl+Z retira el ultimo vertice; Escape cancela el poligono sin terminar.
+Regular: elige entre 3 y 100 lados, centro y primer vertice. Puedes indicar
+un radio fijo en milimetros; 0 permite fijarlo con el puntero.
+Los lados son segmentos editables y se guardan y exportan con el dibujo.
+Los apoyos nuevos de la regla y las escuadras no muestran puntos ni etiquetas.
+Los puntos de datos que ya habias creado se conservan.
 
 6. FUNCIONAMIENTO SIN INTERNET
 Dibujar, guardar, consultar los PDF ya importados y exportar no requieren
