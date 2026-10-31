@@ -12,6 +12,8 @@ Desde el paquete 0.8.2, el módulo **Descriptiva** permite crear puntos, rectas 
 
 Desde el paquete 0.8.3, **Polígono** permite dibujar por vértices o construir polígonos regulares con radio fijo opcional. El rotulado toma automáticamente el número y el título del trabajo. Los apoyos nuevos de regla y escuadras quedan ocultos y sin etiquetas.
 
+Desde el paquete 0.8.4, **Descriptiva** tiene su propia mesa de construcción por A₁ y A₂ alineados, segmentos, rectas, planos y anotaciones. Exporta PDF, PNG, SVG y HTML 3D autónomo con giro y pausa. El balde incorpora 38 colores y rayados ajustables; los títulos de lámina se muestran completos y los nuevos extremos de segmentos quedan ocultos.
+
 ## Descargar
 
 Abre [la publicación más reciente](https://github.com/fran56caton/geotrazo-actualizaciones/releases/latest) y descarga **GeoTrazo-Instalar-…-Windows-x64.exe**. Incluye WebView2 para instalar sin conexión. La biblioteca de un usuario nuevo empieza vacía; puedes personalizar el alumno en el rotulado y el estudiante y título de la carátula. Se mantiene la plantilla original de UNHEVAL con su escudo.

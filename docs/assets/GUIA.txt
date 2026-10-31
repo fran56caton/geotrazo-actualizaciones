@@ -1,7 +1,7 @@
 GEOTRAZO 0.8 - GUIA PARA INSTALAR Y EMPEZAR
 
 1. INSTALACION
-Abre GeoTrazo-Instalar-0.8.3-Windows-x64.exe y sigue los pasos.
+Abre GeoTrazo-Instalar-0.8.4-Windows-x64.exe y sigue los pasos.
 El instalador incluye el componente Microsoft WebView2 para instalarlo
 si hace falta, sin descargarlo durante la instalacion.
 Compatible con Windows 10 y Windows 11 de 64 bits (x64).
@@ -44,6 +44,15 @@ un radio fijo en milimetros; 0 permite fijarlo con el puntero.
 Los lados son segmentos editables y se guardan y exportan con el dibujo.
 Los apoyos nuevos de la regla y las escuadras no muestran puntos ni etiquetas.
 Los puntos de datos que ya habias creado se conservan.
+Los segmentos nuevos tambien usan apoyos ocultos; los puntos de datos
+que selecciones expresamente mantienen sus nombres y visibilidad.
+
+BALDE Y RAYADO
+El balde incluye 38 colores y selector personalizado. En Relleno elige
+Color uniforme, Rayas o Rayas cruzadas. Ajusta angulo, separacion y opacidad;
+confirma con Pintar region. Puedes editar el relleno en Propiedades.
+El rayado se conserva al guardar y se exporta como vectores en PDF y SVG.
+Los titulos de las laminas se muestran completos en un campo amplio.
 
 6. FUNCIONAMIENTO SIN INTERNET
 Dibujar, guardar, consultar los PDF ya importados y exportar no requieren
@@ -73,7 +82,16 @@ un aviso de editor desconocido. Comprueba que recibiste el archivo del autor
 y, si lo necesitas, contrasta el SHA-256 con SHA256SUMS.txt.
 
 8. GEOMETRIA DESCRIPTIVA
-Abre Descriptiva en la barra superior. Anade puntos por sus coordenadas
+Abre Descriptiva en la barra superior para entrar en su propia mesa blanca,
+con herramientas, inspector y vistas diedrica y 3D vinculadas.
+Punto A1 > A2: marca primero la proyeccion horizontal y despues la vertical;
+la segunda conserva automaticamente la abscisa. El ajuste puede ser de
+1, 0.5 o 0.1 mm, o libre. Esc y Ctrl+Z cancelan pasos pendientes.
+Seleccionar permite arrastrar una proyeccion; la otra y el modelo se
+actualizan juntos. Deshacer y Rehacer actuan sobre el mismo trabajo.
+Segmento y Recta: elige dos puntos del modelo. Plano: elige tres no alineados.
+Anotacion permite colocar texto con un clic en la lamina.
+Tambien puedes anadir puntos por sus coordenadas
 X (abscisa), Y (alejamiento) y Z (cota), en milimetros. Y positivo queda
 delante de PV; Z positivo queda encima de PH. A1 es la proyeccion horizontal
 y A2 la vertical. El modelo se guarda automaticamente en el mismo trabajo.
@@ -87,7 +105,13 @@ Vista y posicion en la lamina permite cambiar origen y escala o ajustar
 el modelo a la hoja. Los ejemplos son opcionales y editables.
 Volver al dibujo permite continuar los trazos normales sobre las proyecciones.
 Los puntos proyectados estan vinculados: cambia sus coordenadas desde
-Descriptiva. Exporta con PDF, SVG o rotulado igual que cualquier dibujo.
+Descriptiva. Exportar Descriptiva ofrece PDF vectorial, PNG, SVG y HTML.
+El PDF puede incluir una segunda pagina vectorial con la vista 3D.
+PNG y SVG permiten elegir la lamina o la vista 3D actual, con fondo blanco.
+El HTML contiene el modelo giratorio y las proyecciones en un solo archivo:
+funciona sin internet, permite girar, pausar y cambiar la velocidad.
+Si el sistema solicita movimiento reducido, empieza pausado.
+Al volver al dibujo siguen disponibles los otros formatos y el rotulado.
 
 9. PAGINA OFICIAL
 https://fran56caton.github.io/geotrazo-actualizaciones/

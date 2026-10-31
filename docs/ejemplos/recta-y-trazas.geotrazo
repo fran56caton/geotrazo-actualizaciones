@@ -11,7 +11,7 @@
   },
   "objects": [
     {
-      "id": "d:b43b5223-05e4-4e14-8854-8b71bf3062b4:LT:a",
+      "id": "d:1be506f1-5d85-4b17-b187-e6e69bbae0ea:LT:a",
       "def": {
         "type": "free",
         "x": 10,
@@ -27,7 +27,7 @@
       "source": "descriptive"
     },
     {
-      "id": "d:b43b5223-05e4-4e14-8854-8b71bf3062b4:LT:b",
+      "id": "d:1be506f1-5d85-4b17-b187-e6e69bbae0ea:LT:b",
       "def": {
         "type": "free",
         "x": 287,
@@ -43,11 +43,11 @@
       "source": "descriptive"
     },
     {
-      "id": "d:b43b5223-05e4-4e14-8854-8b71bf3062b4:LT",
+      "id": "d:1be506f1-5d85-4b17-b187-e6e69bbae0ea:LT",
       "def": {
         "type": "through",
-        "a": "d:b43b5223-05e4-4e14-8854-8b71bf3062b4:LT:a",
-        "b": "d:b43b5223-05e4-4e14-8854-8b71bf3062b4:LT:b",
+        "a": "d:1be506f1-5d85-4b17-b187-e6e69bbae0ea:LT:a",
+        "b": "d:1be506f1-5d85-4b17-b187-e6e69bbae0ea:LT:b",
         "extent": "segment"
       },
       "name": "Línea de tierra",
@@ -60,7 +60,7 @@
       "source": "descriptive"
     },
     {
-      "id": "d:b43b5223-05e4-4e14-8854-8b71bf3062b4:LT:text",
+      "id": "d:1be506f1-5d85-4b17-b187-e6e69bbae0ea:LT:text",
       "def": {
         "type": "text",
         "x": 279,
@@ -451,7 +451,7 @@
   "units": "mm",
   "log": [],
   "descriptive": {
-    "id": "b43b5223-05e4-4e14-8854-8b71bf3062b4",
+    "id": "1be506f1-5d85-4b17-b187-e6e69bbae0ea",
     "points": [
       {
         "x": -45,
