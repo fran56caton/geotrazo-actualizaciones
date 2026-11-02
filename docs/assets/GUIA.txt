@@ -116,6 +116,6 @@ Si el sistema solicita movimiento reducido, empieza pausado.
 Al volver al dibujo siguen disponibles los otros formatos y el rotulado.
 
 9. PAGINA OFICIAL
-https://fran56caton.github.io/geotrazo-actualizaciones/
+https://geotrazo.vercel.app/
 Manual, ejemplos editables, novedades y descarga de la ultima publicacion.
 Autor: Fran David Caton Alania.

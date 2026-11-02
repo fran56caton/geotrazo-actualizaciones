@@ -6,7 +6,9 @@ Autor: **Fran David Caton Alania**.
 
 ## Página oficial
 
-[GeoTrazo: descargas, manual, ejemplos editables y novedades](https://fran56caton.github.io/geotrazo-actualizaciones/).
+[GeoTrazo: descargas, manual, ejemplos editables y novedades](https://geotrazo.vercel.app/).
+
+La página oficial está alojada en Vercel y vinculada a la rama `main` de este repositorio: los cambios publicados en `docs` se despliegan automáticamente. La dirección anterior en GitHub Pages sigue disponible para los enlaces existentes.
 
 Desde el paquete 0.8.2, el módulo **Descriptiva** permite crear puntos, rectas y planos en 3D, obtener sus proyecciones y trazas, y abatir planos sobre PH. El modelo se guarda en el mismo trabajo y sus trazos se exportan con las herramientas habituales.
 
